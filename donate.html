@@ -9,15 +9,8 @@
     .container { background: #fff; padding: 30px; max-width: 600px; margin: auto; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
     h1 { color: #444; }
     .details { font-size: 18px; margin-top: 20px; line-height: 1.8; text-align: left; }
-    .actions { margin-top: 30px; }
-    button, a { background: #0070f3; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; text-decoration: none; margin: 10px; cursor: pointer; font-size: 16px; }
-    img.qr { margin-top: 30px; width: 180px; height: 180px; }
+    a { color: #0070f3; text-decoration: none; display: inline-block; margin-top: 30px; }
   </style>
-  <script>
-    function printDetails() {
-      window.print();
-    }
-  </script>
 </head>
 <body>
   <div class="container">
@@ -31,16 +24,7 @@
       <strong>House Address (optional for mail donations):</strong><br>
       103 Laura Avenue, Troy, Alabama 36079
     </div>
-
-    <div class="actions">
-      <button onclick="printDetails()">🖨️ Print / Download</button>
-      <a href="index.html">← Back to Home</a>
-    </div>
-
-    <div class="qr-code">
-      <p>Scan to open donation details:</p>
-      <img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://kelvinhassan2.github.io/Bryceleatherwood-funeral/donate.html" alt="QR Code">
-    </div>
+    <a href="index.html">← Back to Home</a>
   </div>
 </body>
 </html>
